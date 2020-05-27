@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>Zombie Snacks</title>
+      <link rel="shortcut icon" type="image/png" href="E:\collge\internet fundmental\project zero\img\icons8-frankensteins-monster-64.png">
+       <script src="https://kit.fontawesome.com/e6a94831af.js" crossorigin="anonymous"></script>
+        <style type="text/css">
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            body{
+             font-family:'Franklin Gothic Medium';   
+            }
+            ::-webkit-scrollbar{
+                width: 12px;
+            }
+            ::-webkit-scrollbar-track{
+                border: 7px solid #8b8b8b;
+                box-shadow: inset 0 0 2.5px 2px rgba(0,0,0,5);
+            }
+            ::-webkit-scrollbar-thumb{
+                background:linear-gradient(45deg, #06dee1, #ff00b3)
+            }
+            .background-wrap{
+                position: fixed;
+                z-index: -1000;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                top: 0;
+                left: 0;
+            }
+            #video-bg-elem{
+                position: absolute;
+                top: 0;
+                left: 0;
+                min-height: 100%;
+                min-width: 100%;
+    
+            }
+            nav{
+                position: relative;
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                background-color:none;
+                margin-left: 114px;
+                bottom: 35px;
+            }
+            li  ,a{
+                font-family: "montserrat",sans-serif ;
+                font-weight: 500;
+                font-size: 16px;
+                color: #edf0f1;
+                text-decoration: none;
+                
+                
+    
+    
+            }
+            header{
+                display: flex;
+                background-color: rgba(255, 255, 255, 0);
+                justify-content: space-between;
+                align-items: center;
+                padding: 0px 3%;
+                animation-name: nigga21;
+                animation-duration: 4s;
+            }
+            .logo{
+                cursor: pointer;
+                margin-top: 8px;
+                margin-right: 20px;
+            }
+            .navbtn{
+                list-style: none;
+                margin-right: 390px;
+    
+            }
+            .navbtn li{
+                display: inline-block;
+                padding: 0px 20px;
+            }
+            .navbtn li a {
+                transition: all 0.3s ease 0s;
+            }
+            .navbtn li a:hover {
+                color: rgb(89, 0, 255);
+            }
+            .searchb{
+                background: rgb(89, 0, 255);
+                height: 20px;
+                border-radius: 40px;
+                padding: 10px;
+                margin-right: 60px;
+                top: 5px;
+            }
+            .search-btn{
+                color: #009edd;
+                float: right;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background: #6200ff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 0.4s;
+            }
+            .search-txt{
+                border: none;
+                background: none;
+                outline: none;
+                float: left;
+                padding: 0;
+                color: rgb(255, 255, 255);
+                font-size: 15px;
+                transition: 0.4s;
+                line-height: 20px;
+                width: 0px;
+            }
+            .searchb:hover > .search-txt{
+                width: 240px;
+                padding: 0 6px;
+
+            }
+            .searchb:hover > .search-btn{
+                background: white;
+                height: 24px;
+                width: 24px;
+
+            }
+            .contactbtn a{
+                position: relative;
+                margin-left: 900px;
+                bottom: 53px;
+                transition: all 0.3s ease 0s;
+            }
+            .contactbtn a:hover{
+                color: rgb(89, 0, 255);
+            }
+            .box1{
+                width: 100%;
+                background-size: cover;
+                display: table;
+            }
+            .box2{
+                height: 100vh;
+                width: 100%;
+                margin-top: 700px;
+                background-size: cover;
+                background-image: url(file:///E:/collge/internet%20fundmental/project%20zero/img/3c62fd83739235.5db8ef9e9518f.png);
+                display: table;
+
+            }
+            .button1{
+                position: relative;
+                padding: 30px 208px;
+                width: 100%;
+                margin-left: 148px;
+                top: 472px;
+                background-color: rgba(255, 255, 0, 0);
+                
+            }   
+            .box3{
+                height: 100vh;
+                width: 100%;
+                background-size: cover;
+                background-image: url(file:///E:/collge/internet%20fundmental/project%20zero/img/023f4983739235.5db8bf2a5aba0.png);
+                display: table;
+
+            }
+            .box4{
+                height: 100vh;
+                width: 100%;
+                background-size: cover;
+                background-image: url(file:///E:/collge/internet%20fundmental/project%20zero/img/d62b8a83739235.5dd482d3f15a8.png);
+                display: table;
+
+            }
+            .box5{
+                height: 100vh;
+                width: 100%;
+                background-size: cover;
+                background-image: url(file:///E:/collge/internet%20fundmental/project%20zero/img/1Up%20Concept%20by%20cronobreaker%20on%20DeviantArt..z.jpg);
+                display: table;
+
+            }
+            .box6{
+                height: 70vh;
+                width: 100%;
+                background-size:contain;
+                background-image: url(file:///E:/collge/internet%20fundmental/project%20zero/img/e2eb7083739235.5dfaff955bc57.gif);
+                display: table;
+            }      
+            
+           
+           
+        </style>
+    </head>
+      <body>
+       
+        <div class="background-wrap">
+
+            <video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
+                <source src="E:\collge\internet fundmental\project zero\zombie-snacks.mp4" type="video/mp4">
+                video not supported
+            </video>
+        </div>
+   
+   
+    
+    
+    
+    
+    
+    <header>
+         <img class="logo" src="E:\collge\internet fundmental\project zero\img\icons8-frankensteins-monster-64.png" alt="logo">
+            <div class="searchb">
+                <input class="search-txt" type="text" name="" placeholder="Type to search">
+                <a class="search-btn" href="#">
+                <i class="fas fa-search"></i>
+                </a>
+               </div>
+        </header>
+        <nav>
+            <ul class="navbtn">
+                
+                <li><a href="#"><i class="far fa-user-circle"></i></a></li>
+                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                <li><a href="#"><i class="fas fa-cart-plus"></i></a></li>
+
+            </ul>
+        </nav>
+        <div class="contactbtn">
+            <a class="cta" href="#"><i class="fas fa-headset"></i></a>
+            </div>
+        
+        
+        
+        
+        
+            <div class="box2">
+               <a class="button1" href="#"></a>
+              </div>    
+              <div class="box3">
+          
+              </div>
+              <div class="box4">
+
+              </div>
+              <div class="box5">
+
+              </div>
+              <div class="box6">
+               <img class="hll" src="E:\collge\internet fundmental\project zero\img\1Up Concept by cronobreaker on DeviantArt.jpg"></img>
+              </div>
+       
+       
+    </body>
+</html>
